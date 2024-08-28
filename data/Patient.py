@@ -523,7 +523,7 @@ class Patient:
 
     def get_arm_level_cn_events(self):
         n_samples = len(self.sample_list)
-        for ckey, (chrom, csize) in enumerate(zip(list(map(str, range(1, 23))) + ['X', 'Y'], CSIZE)):
+        for ckey, (chrom, csize) in enumerate(zip(list(map(str, range(1, 23))) + ['X', 'Y', '25'], CSIZE)):
             centromere = CENT_LOOKUP[ckey + 1]
             tree = IntervalTree()
             for sample in self.sample_list:
