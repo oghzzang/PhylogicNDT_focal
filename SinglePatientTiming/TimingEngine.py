@@ -8,7 +8,7 @@ import random
 from data.Enums import CSIZE, CENT_LOOKUP
 
 #TODO: get rid of these globals
-_chromosomes = tuple(map(str, range(1, 23))) + ('X',)
+_chromosomes = tuple(map(str, range(1, 23))) + ('X', '25')
 _arms = 'pq'
 _cn_state_whitelist = frozenset({(1., 2.), (0., 2.), (2., 2.)})
 CSIZE = dict(zip(_chromosomes, CSIZE))
