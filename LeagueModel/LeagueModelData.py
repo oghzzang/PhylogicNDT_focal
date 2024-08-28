@@ -326,7 +326,7 @@ class League():
     def get_final_event_list(self,max_mut=20,max_focal=5, max_homdel=5, num_gains_default=15,
                              num_losses_default=15,max_arm=30, min_prevalence=0.05):
 
-        final_event_list = []
+        final_event_list = ['TERT', 'HBV-TERT', 'TP53', 'CTNNB1']
 
         num_arm = 0
         # first, add top occuring gains
