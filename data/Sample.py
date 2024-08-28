@@ -418,7 +418,7 @@ class TumorSample:
             else:
                 input_type = 'moo'
 
-        seg_tree = {chrom: IntervalTree() for chrom in list(map(str, range(1, 23))) + ['X', 'Y']}
+        seg_tree = {chrom: IntervalTree() for chrom in list(map(str, range(1, 23))) + ['X', 'Y'] + ['25'}
 
         if input_type == 'none':
             return None
