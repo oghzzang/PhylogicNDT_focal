@@ -14,7 +14,7 @@ _cn_state_whitelist = frozenset({(1., 2.), (0., 2.), (2., 2.)})
 CSIZE = dict(zip(_chromosomes, CSIZE))
 CENT_LOOKUP = {str(c): v for c, v in CENT_LOOKUP.items()}
 CENT_LOOKUP['X'] = CENT_LOOKUP['23']
-
+CENT_LOOKUP['Y'] = CENT_LOOKUP['24']
 
 class TimingEngine(object):
     """
