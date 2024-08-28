@@ -86,7 +86,7 @@ class League():
 
     ## params ##
     arm_CNVs = set([])
-    for chrom in map(str, range(23)):
+    for chrom in map(str, range(26)):
         arm_CNVs.add('loss_' + chrom + 'p')
         arm_CNVs.add('gain_' + chrom + 'p')
         arm_CNVs.add('loss_' + chrom + 'q')
