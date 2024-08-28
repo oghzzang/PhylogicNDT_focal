@@ -90,7 +90,7 @@ class Patient:
 
         self.unclustered_muts = []
 
-        self.concordant_cn_tree = {chrom: IntervalTree() for chrom in list(map(str, range(1, 23))) + ['X', 'Y']}
+        self.concordant_cn_tree = {chrom: IntervalTree() for chrom in list(map(str, range(1, 23))) + ['X', 'Y'] + ['25'] }
 
         # BuildTree
         self.TopTree = None
